@@ -27,7 +27,7 @@
 
 - name: setup_cluster | copy TLS CA cert, server cert & private key
   copy:
-    content: "{{ item.value.content }}"
+    src: "{{ item.value.src }}"
     dest: "{{ mariadb_certificates_dir }}/{{ item.value.name }}"
     owner: "mysql"
     group: "mysql"
