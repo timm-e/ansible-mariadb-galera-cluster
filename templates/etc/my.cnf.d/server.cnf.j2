@@ -2,6 +2,11 @@
 binlog_format=ROW
 default_storage_engine=InnoDB
 innodb_autoinc_lock_mode=2
+
+innodb_buffer_pool_size={{ galera_innodb_buffer_pool_size }}
+innodb_log_file_size={{ galera_innodb_log_file_size }}
+innodb_lock_wait_timeout={{ galera_innodb_lock_wait_timeout }}
+
 query_cache_size=0
 query_cache_type=0
 

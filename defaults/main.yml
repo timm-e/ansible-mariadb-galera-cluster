@@ -316,3 +316,9 @@ galera_enable_cacti_monitoring: false
 # Define the cacti user info for cacti db monitoring - If used. May remove later.
 cacti_db_password: "cactiuser"
 cacti_db_user: "cactiuser"
+
+galera_innodb_buffer_pool_size: 4096M
+galera_innodb_log_file_size: 64M
+galera_innodb_lock_wait_timeout: 900
+
+
